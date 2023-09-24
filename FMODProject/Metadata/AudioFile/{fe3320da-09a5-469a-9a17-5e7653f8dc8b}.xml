@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fe3320da-09a5-469a-9a17-5e7653f8dc8b}">
+		<property name="assetPath">
+			<value>Memories of a Lost Autumn.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>170.00489795918367</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{104eb285-0327-46e2-ac5e-fd8176f73600}</destination>
+		</relationship>
+	</object>
+</objects>
