@@ -30,6 +30,7 @@ namespace CerenityStudio
         void Update()
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            Debug.Log(horizontal);
 
             if(!isFacingRight && horizontal > 0f)
             {
@@ -48,17 +49,11 @@ namespace CerenityStudio
         {
             horizontal = context.ReadValue<Vector2>().x;
 
-            // ketika salah satu tombol WASD ditekan
-            if (context.performed)
-            {
+            // when move value is not 0, play the animation
+            if (horizontal != 0) 
                 anim.SetBool("isMove", true);
-            }
-
-            // ketika salah satu tombol WASD dilepas
-            if (context.canceled)
-            {
+            else 
                 anim.SetBool("isMove", false);
-            }
         }
 
         // input ketika lompat
