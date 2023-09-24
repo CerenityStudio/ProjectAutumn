@@ -30,7 +30,6 @@ namespace CerenityStudio
         void Update()
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-            Debug.Log(horizontal);
 
             if(!isFacingRight && horizontal > 0f)
             {
