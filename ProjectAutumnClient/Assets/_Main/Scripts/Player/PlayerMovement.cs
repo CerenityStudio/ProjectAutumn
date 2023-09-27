@@ -8,28 +8,39 @@ namespace CerenityStudio
     public class PlayerMovement : MonoBehaviour
     {
     #region VARIABLE
-        public Transform groundCheck;
-        public LayerMask groundLayer;
-        public Animator anim;
-
-        private Rigidbody2D rb;
-        private float horizontal;
         [SerializeField] private float speed = 5f;
         [SerializeField] private float jumpingPower = 16f;
-        [SerializeField] private bool isFacingRight = true;
+        private float horizontal;
+        private bool isFacingRight = true;
+
+        private bool isWallSliding;
+        private float wallSlidingSpeed = 2f;
+
+        private bool isWallJumping;
+        private float wallJumpingDirection;
+        private float wallJumpingTime = 0.2f;
+        private float wallJumpingCounter;
+        private float wallJumpingDuration = 0.4f;
+        private Vector2 wallJumpingPower = new Vector2(8f, 16f);
+
+        private Rigidbody2D _rigidbody;
+        [SerializeField] private Animator _animator;
+        [SerializeField] private Transform groundCheck;
+        [SerializeField] private LayerMask groundLayer;
+        [SerializeField] private Transform wallCheck;
+        [SerializeField] private LayerMask wallLayer;
     #endregion
 
     #region UNITY FUNCTION
-        // Start is called before the first frame update
-        void Start()
+        private void Awake()
         {
-            rb = GetComponent<Rigidbody2D>();
+            _rigidbody = GetComponent<Rigidbody2D>();
         }
 
         // Update is called once per frame
         void Update()
         {
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            _rigidbody.velocity = new Vector2(horizontal * speed, _rigidbody.velocity.y);
 
             if(!isFacingRight && horizontal > 0f)
             {
@@ -39,6 +50,9 @@ namespace CerenityStudio
             {
                 Flip();
             }
+
+            WallSlide();
+            WallJump();
         }
     #endregion
 
@@ -49,42 +63,106 @@ namespace CerenityStudio
             horizontal = context.ReadValue<Vector2>().x;
 
             // when move value is not 0, play the animation
-            if (horizontal != 0) 
-                anim.SetBool("isMove", true);
-            else 
-                anim.SetBool("isMove", false);
+            if (horizontal != 0)
+                _animator.SetBool("isMove", true);
+            else
+                _animator.SetBool("isMove", false);
         }
 
         // input ketika lompat
         public void Jump(InputAction.CallbackContext context)
         {
-            // ketika tombol lompat ditekan
+            // ketika tombol lompat ditekan ditanah
             if (context.performed && IsGrounded())
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-                anim.SetTrigger("isJump");
+                _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, jumpingPower);
+                _animator.SetTrigger("isJump");
+            }
+
+            // ketika tombol lompat ditekan di wall
+            if (context.performed && wallJumpingCounter > 0f)
+            {
+                isWallJumping = true;
+                _rigidbody.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y);
+                wallJumpingCounter = 0f;
+
+                if(transform.localScale.x != wallJumpingDirection)
+                {
+                    isFacingRight = !isFacingRight;
+                    Vector3 localScale = transform.localScale;
+                    localScale.x *= -1f;
+                    transform.localScale = localScale;
+                }
+
+                Invoke(nameof(StopWallJumping), wallJumpingDuration);
             }
 
             // ketika tombol lompat dilepas
-            if (context.canceled && rb.velocity.y > 0f)
+            if (context.canceled && _rigidbody.velocity.y > 0f)
             {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, _rigidbody.velocity.y * 0.5f);
             }
         }
     #endregion
 
     #region PRIVATE FUNCTION
-        private bool IsGrounded()
-        {
-            return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        }
-
         private void Flip()
         {
             isFacingRight = !isFacingRight;
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;
             transform.localScale = localScale;
+        }
+
+        private bool IsGrounded()
+        {
+            return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        }
+
+        private bool IsWalled()
+        {
+            return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer);
+        }
+
+        private void WallSlide()
+        {
+            if (IsWalled() && !IsGrounded() && horizontal != 0f)
+            {
+                isWallSliding = true;
+                _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, Mathf.Clamp(_rigidbody.velocity.y, -wallSlidingSpeed, float.MaxValue));
+            }
+            else
+            {
+                isWallSliding = false;
+            }
+        }
+
+        private void WallJump()
+        {
+            if (isWallSliding)
+            {
+                isWallJumping = false;
+                wallJumpingDirection = -transform.localScale.x;
+                wallJumpingCounter = wallJumpingTime;
+
+                CancelInvoke(nameof(StopWallJumping));
+            }
+            else
+            {
+                wallJumpingCounter -= Time.deltaTime;
+            }
+        }
+
+        private void StopWallJumping()
+        {
+            isWallJumping = false;
+        }
+
+        IEnumerator LandAnimation()
+        {
+            _animator.SetBool("isGrounded", true);
+            yield return new WaitForSeconds(1f);
+            _animator.SetBool("isGrounded", false);
         }
     #endregion
     }
