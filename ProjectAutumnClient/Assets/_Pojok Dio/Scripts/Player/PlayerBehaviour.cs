@@ -17,8 +17,9 @@ namespace CerenityStudio
 
         void Meow ()
         {
+            
             if (Input.GetKeyDown(KeyCode.E))
-                audioSource.PlayOneShot(catSound);
+                Debug.Log("Meoww");
         }
     }
 }

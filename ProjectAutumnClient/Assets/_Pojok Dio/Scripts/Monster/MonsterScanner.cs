@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 namespace CerenityStudio
 {
@@ -16,6 +17,8 @@ namespace CerenityStudio
       [Header("Events")]
       [SerializeField] private UnityEvent PlayerCatchedEvent;
 
+      [SerializeField] private Slider scannerBar;
+
       private void Start()
       {
          SetTimer(initiateTimer);
@@ -26,11 +29,17 @@ namespace CerenityStudio
          Scanning();
       }
       
-      private void OnTriggerEnter2D(Collider2D col)
+      private void OnTriggerStay2D(Collider2D col)
       {
          if (col.CompareTag("Player"))
          {
-            playerInRange = true;
+            if (!col.GetComponent<PlayerHide>().isHiding)
+               playerInRange = true;
+            else
+            {
+               playerInRange = false;
+               SetTimer(initiateTimer);
+            }
          }
       }
 
@@ -46,7 +55,17 @@ namespace CerenityStudio
       private void Scanning()
       {
          if (playerInRange)
+         {
             currentTimer -= Time.deltaTime;
+            scannerBar.gameObject.SetActive(true);
+            scannerBar.maxValue = initiateTimer;
+            scannerBar.value += Time.deltaTime;
+         }
+         else
+         {
+            scannerBar.gameObject.SetActive(false);
+            scannerBar.value = 0;
+         }
 
          if (currentTimer <= 0)
          {
