@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace CerenityStudio
 {
@@ -18,6 +14,8 @@ namespace CerenityStudio
         [Header("Rotation Value")]
         [SerializeField] private float rotationSpeed;
 
+        [SerializeField] private MonsterScanner scanner;
+
         private void Start()
         {
             curentTimer = initiateTimer;
@@ -25,7 +23,8 @@ namespace CerenityStudio
 
         void Update()
         {
-            Roaming();
+            if (!scanner.playerInRange && !scanner.playerIsCatched )
+                Roaming();
         }
 
         
@@ -61,5 +60,6 @@ namespace CerenityStudio
         }
         
         #endregion
+        
     }
 }
