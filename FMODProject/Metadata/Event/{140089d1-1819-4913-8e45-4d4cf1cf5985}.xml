@@ -5,7 +5,7 @@
 			<value>Blue</value>
 		</property>
 		<property name="name">
-			<value>BGM</value>
+			<value>memories_of_a_lost_autumn</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -80,6 +80,9 @@
 	<object class="SingleSound" id="{44193b31-69b0-4cf0-9829-b00191a58c83}">
 		<property name="length">
 			<value>170.00489795918367</value>
+		</property>
+		<property name="looping">
+			<value>true</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{fe3320da-09a5-469a-9a17-5e7653f8dc8b}</destination>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{fe3320da-09a5-469a-9a17-5e7653f8dc8b}">
 		<property name="assetPath">
-			<value>Memories of a Lost Autumn.mp3</value>
+			<value>memories_of_a_lost_autumn_bgm.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{f3e55663-a21b-4b17-8a55-20bb6e049548}">
+	<object class="AudioFile" id="{deaef23c-4dd8-47ed-955e-ee23bc1bbe25}">
 		<property name="assetPath">
-			<value>path_walk_bgm.ogg</value>
-		</property>
-		<property name="isStreaming">
-			<value>true</value>
+			<value>Cat Meow/cat_angry_sfx.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>44.0999985</value>
+			<value>48</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>110.77403628117914</value>
+			<value>0.88800000000000001</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{104eb285-0327-46e2-ac5e-fd8176f73600}</destination>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{397ecb0d-335e-4c65-bee5-96e0b4ab61d0}">
+		<property name="assetPath">
+			<value>Monster Roar/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{104eb285-0327-46e2-ac5e-fd8176f73600}</destination>
+		</relationship>
+	</object>
+</objects>

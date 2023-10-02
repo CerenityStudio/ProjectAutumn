@@ -778,11 +778,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1626635872 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 587384271593779438, guid: cbef4fdfb6ee77d4287c7885f79f38d3, type: 3}
-  m_PrefabInstance: {fileID: 2543991743452065758}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2543991743452065758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -791,6 +786,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2473493435735954858, guid: cbef4fdfb6ee77d4287c7885f79f38d3, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3912201969168784146, guid: cbef4fdfb6ee77d4287c7885f79f38d3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -835,10 +834,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7467003896961162627, guid: cbef4fdfb6ee77d4287c7885f79f38d3, type: 3}
-      propertyPath: _animator
-      value: 
-      objectReference: {fileID: 1626635872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -895,6 +890,26 @@ PrefabInstance:
     - target: {fileID: 4654262585086063529, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
       propertyPath: m_Name
       value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250219062756965058, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Memories_of_a_lost_autumn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250219062756965058, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 335579601
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250219062756965058, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1225988121
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250219062756965058, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 1280132494
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250219062756965058, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -2057711631
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

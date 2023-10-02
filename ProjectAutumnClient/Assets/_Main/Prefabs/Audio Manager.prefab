@@ -61,7 +61,7 @@ MonoBehaviour:
   LoadEvent: 1
   UnloadEvent: 2
   Banks:
-  - Master
+  - BGM
   CollisionTag: 
   PreloadSamples: 0
 --- !u!114 &6250219062756965058
@@ -83,7 +83,7 @@ MonoBehaviour:
       Data2: 1225988121
       Data3: 1280132494
       Data4: -2057711631
-    Path: event:/BGM
+    Path: event:/Memories_of_a_lost_autumn
   Event: 
   PlayEvent: 1
   StopEvent: 2
