@@ -81,6 +81,7 @@ namespace CerenityStudio
       {
          // when player get catched by monster
          PlayerCatchedEvent?.Invoke();
+         //AudioManager.instance.EnemyRoar();
       }
 
       void SetTimer(float time)

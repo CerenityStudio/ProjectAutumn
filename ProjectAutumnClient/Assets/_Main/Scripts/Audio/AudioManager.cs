@@ -10,12 +10,12 @@ namespace CerenityStudio
         public static AudioManager instance { get; private set; }
 
     #region VARIABLE
-        // [field: Header("Music")]
-        // [field: SerializeField] public EventReference bgm { get; private set; }
+        //[field: Header("Music")]
+        //[field: SerializeField] public EventReference bgm { get; private set; }
 
-        [field: Header("SFX")]
-        // [field: SerializeField] public EventReference jumpSound { get; private set; }
-        [field: SerializeField] public EventReference enemySound { get; private set; }
+        //[field: Header("SFX")]
+        //[field: SerializeField] public EventReference jumpSound { get; private set; }
+        //[field: SerializeField] public EventReference enemySound { get; private set; }
     #endregion
 
     #region UNITY FUNCTION
@@ -53,10 +53,10 @@ namespace CerenityStudio
         //     PlayOneShot(bumpSound, this.transform.position);
         // }
 
-        public void EnemyRoar()
-        {
-            PlayOneShot(enemySound, this.transform.position);
-        }
+        // public void PlayMonsterRoar()
+        // {
+        //     PlayOneShot(enemySound, this.transform.position);
+        // }
     #endregion
 
     #region PRIVATE FUNCTION
