@@ -13,8 +13,9 @@ namespace CerenityStudio
         // [field: Header("Music")]
         // [field: SerializeField] public EventReference bgm { get; private set; }
 
-        // [field: Header("SFX")]
+        [field: Header("SFX")]
         // [field: SerializeField] public EventReference jumpSound { get; private set; }
+        [field: SerializeField] public EventReference enemySound { get; private set; }
     #endregion
 
     #region UNITY FUNCTION
@@ -41,16 +42,21 @@ namespace CerenityStudio
     #endregion
 
     #region PUBLIC FUNTION
-        // public void PlayOneShot(EventReference sound, Vector3 worldPos)
-        // {
-        //     RuntimeManager.PlayOneShot(sound, worldPos);
-        // }
+        public void PlayOneShot(EventReference sound, Vector3 worldPos)
+        {
+             RuntimeManager.PlayOneShot(sound, worldPos);
+        }
 
         // public void PlayBumpSound()
         // {
         //     //AudioManager.instance.PlayOneShot(FMODEvents.instance.bumpSound, this.transform.position);
         //     PlayOneShot(bumpSound, this.transform.position);
         // }
+
+        public void EnemyRoar()
+        {
+            PlayOneShot(enemySound, this.transform.position);
+        }
     #endregion
 
     #region PRIVATE FUNCTION
