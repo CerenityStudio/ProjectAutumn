@@ -46,6 +46,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45be35914a81470da4f596b93eecf01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <enemySound>k__BackingField:
+    Guid:
+      Data1: 219336351
+      Data2: 1213773846
+      Data3: 1315816372
+      Data4: 1215666828
+    Path: event:/Monster_Roar
 --- !u!114 &618080948372830977
 MonoBehaviour:
   m_ObjectHideFlags: 0
