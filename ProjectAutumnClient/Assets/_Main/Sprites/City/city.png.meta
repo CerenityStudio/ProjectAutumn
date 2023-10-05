@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -257,27 +257,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: city_7
-      rect:
-        serializedVersion: 2
-        x: 1719
-        y: 1608
-        width: 4
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03a12641c640e4d4eac13c1d3e2773e9
-      internalID: -1646793415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: city_8
       rect:
         serializedVersion: 2
@@ -299,55 +278,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: city_9
-      rect:
-        serializedVersion: 2
-        x: 1719
-        y: 1531
-        width: 4
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68e6bb4133f929e44be1e3f00cdfdd8c
-      internalID: 874364489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_10
-      rect:
-        serializedVersion: 2
-        x: 1629
-        y: 1471
-        width: 66
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c050239b620883e4e85592b84ce283ca
-      internalID: 29756936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: city_11
       rect:
         serializedVersion: 2
         x: 1171
-        y: 919
+        y: 914
         width: 623
-        height: 539
+        height: 544
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,34 +299,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: city_12
-      rect:
-        serializedVersion: 2
-        x: 1617
-        y: 1455
-        width: 78
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b184a07db35474a4cbc08f61da8c2e58
-      internalID: 1249336229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: city_13
       rect:
         serializedVersion: 2
         x: 1831
-        y: 898
+        y: 893
         width: 619
-        height: 539
+        height: 544
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -425,27 +341,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: city_15
-      rect:
-        serializedVersion: 2
-        x: 2496
-        y: 1333
-        width: 27
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2df761279f3f1d4aab54924bd270e79
-      internalID: 1456632986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: city_16
       rect:
         serializedVersion: 2
@@ -462,69 +357,6 @@ TextureImporter:
       bones: []
       spriteID: 74d197e6d1473834ab7a2737862ad33a
       internalID: -1722263796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_17
-      rect:
-        serializedVersion: 2
-        x: 3537
-        y: 1313
-        width: 41
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9915112c088d0ea4ca4e2aba45436a5d
-      internalID: -423146339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_18
-      rect:
-        serializedVersion: 2
-        x: 542
-        y: 440
-        width: 964
-        height: 477
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bbf3bf9f1a177c45a9333f883d09359
-      internalID: -1556275627
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_19
-      rect:
-        serializedVersion: 2
-        x: 1529
-        y: 455
-        width: 940
-        height: 461
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c64999a1f1b88a4eaf4f086d77864a4
-      internalID: 1049362672
       vertices: []
       indices: 
       edges: []
@@ -551,27 +383,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: city_21
-      rect:
-        serializedVersion: 2
-        x: 3518
-        y: 779
-        width: 5
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b8309f6ddcdffcb4c91857d9e6f71528
-      internalID: 839495776
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: city_22
       rect:
         serializedVersion: 2
@@ -588,153 +399,6 @@ TextureImporter:
       bones: []
       spriteID: 3aa0ca476490b3749bf40d3c97a03404
       internalID: 1249085789
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_23
-      rect:
-        serializedVersion: 2
-        x: 3445
-        y: 729
-        width: 6
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cebb65fbe7b8414f9a458fab5044cb0
-      internalID: -1477379769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_24
-      rect:
-        serializedVersion: 2
-        x: 3480
-        y: 670
-        width: 16
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4056442c09ff9b48a9d18ce18904950
-      internalID: -1152460089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_25
-      rect:
-        serializedVersion: 2
-        x: 3520
-        y: 711
-        width: 21
-        height: 61
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f8823b1b8a06604aba0e70fb485bb84
-      internalID: -876154241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_26
-      rect:
-        serializedVersion: 2
-        x: 3436
-        y: 502
-        width: 5
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9df7799272fa21459adbca9c47435f9
-      internalID: -734504364
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_27
-      rect:
-        serializedVersion: 2
-        x: 3502
-        y: 545
-        width: 8
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a872045fec6dfaf42a509a16ae0edf55
-      internalID: -355921140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_28
-      rect:
-        serializedVersion: 2
-        x: 3500
-        y: 489
-        width: 13
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37c9a990af0aeb94a8580c2e0826af22
-      internalID: 925473767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: city_29
-      rect:
-        serializedVersion: 2
-        x: 3520
-        y: 472
-        width: 13
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbcff2f19a0d2c047a1223fac6faea00
-      internalID: 1947900489
       vertices: []
       indices: 
       edges: []

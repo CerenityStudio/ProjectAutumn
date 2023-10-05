@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 900
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tielscity_0
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 2812
+        width: 992
+        height: 1020
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae6bc19ff86f8348a2d415d4efbe90a
+      internalID: 607718503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tielscity_1
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 2814
+        width: 948
+        height: 1073
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89f6a803fecca74db0dc08256723e23
+      internalID: 1248829411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tielscity_2
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 2810
+        width: 993
+        height: 1022
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d87299c17c849d44bb11ac27a9082d5
+      internalID: 1267899145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tielscity_3
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1527
+        width: 1073
+        height: 952
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd76611349343f340bf2263a6652f074
+      internalID: 926319534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tielscity_4
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1532
+        width: 947
+        height: 946
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924dc9a60932c9a468d9069616834832
+      internalID: -926132102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tielscity_5
+      rect:
+        serializedVersion: 2
+        x: 2927
+        y: 1530
+        width: 1073
+        height: 948
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d2ce5f00eb4474cb7c49db1fd92fb5
+      internalID: 1940495726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tielscity_6
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 177
+        width: 991
+        height: 1015
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91cdf8fa5dbdf548bfaef1b32dbbadf
+      internalID: 173184592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tielscity_7
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 123
+        width: 948
+        height: 1072
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a2ae9793eb7524fb9fdd29f509a518
+      internalID: -187411758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tielscity_8
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 177
+        width: 989
+        height: 1022
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fddb0ff55326ae4280f31ac3505f707
+      internalID: 1453417376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +308,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tielscity_0: 607718503
+      tielscity_1: 1248829411
+      tielscity_2: 1267899145
+      tielscity_3: 926319534
+      tielscity_4: -926132102
+      tielscity_5: 1940495726
+      tielscity_6: 173184592
+      tielscity_7: -187411758
+      tielscity_8: 1453417376
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
