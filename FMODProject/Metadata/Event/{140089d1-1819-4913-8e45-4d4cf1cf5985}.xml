@@ -8,7 +8,7 @@
 			<value>memories_of_a_lost_autumn</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d0fce5d6-d99f-4a6c-9c0e-c9336ba0d296}</destination>
@@ -96,22 +96,10 @@
 	<object class="MixerBusPanner" id="{e9931a0b-263a-40b4-a73c-eb0b2ab76988}" />
 	<object class="MixerBusEffectChain" id="{34c49b72-cf88-4c4d-9260-a2e774658066}">
 		<relationship name="effects">
-			<destination>{5d8482cd-9a52-4452-86a7-15750e90ad0c}</destination>
 			<destination>{aadcdffd-152c-4779-a101-39439c3f44ee}</destination>
-			<destination>{d6752671-c501-4892-a8e6-53c43dd2d97d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{e3844e7e-ae89-4c79-b30c-5f43570c00f1}" />
 	<object class="MixerBusFader" id="{9abd5f58-92cf-43bd-8001-8db55098da60}" />
-	<object class="SpatialiserEffect" id="{5d8482cd-9a52-4452-86a7-15750e90ad0c}">
-		<property name="distanceRolloffType">
-			<value>2</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{aadcdffd-152c-4779-a101-39439c3f44ee}" />
-	<object class="ThreeEQEffect" id="{d6752671-c501-4892-a8e6-53c43dd2d97d}">
-		<property name="crossoverSlope">
-			<value>2</value>
-		</property>
-	</object>
 </objects>

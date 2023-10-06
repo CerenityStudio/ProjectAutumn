@@ -443,7 +443,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73860311ec6a6d04d8ab9c369697ca62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catSound: {fileID: 7893066223317360523}
+  catSound:
+    Guid:
+      Data1: 899746110
+      Data2: 1293230594
+      Data3: 1462534024
+      Data4: 1947164149
+    Path: event:/Cat_Attention
 --- !u!1 &7893066223317360523
 GameObject:
   m_ObjectHideFlags: 0

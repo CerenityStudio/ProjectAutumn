@@ -4011,10 +4011,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1998337987}
-    - target: {fileID: 670035287561192152, guid: d2d951671f0e2a048a1e31d3d65d2eae, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 6.74
-      objectReference: {fileID: 0}
+    - target: {fileID: 768238102897003718, guid: d2d951671f0e2a048a1e31d3d65d2eae, type: 3}
+      propertyPath: attenuationObject
+      value: 
+      objectReference: {fileID: 2543991743452065759}
     - target: {fileID: 2265114171399138547, guid: d2d951671f0e2a048a1e31d3d65d2eae, type: 3}
       propertyPath: m_Name
       value: Camera Follow
@@ -4057,18 +4057,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5709212163091516881, guid: d2d951671f0e2a048a1e31d3d65d2eae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6163215087217920065, guid: d2d951671f0e2a048a1e31d3d65d2eae, type: 3}
-      propertyPath: orthographic size
-      value: 6.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 6448966770171643972, guid: d2d951671f0e2a048a1e31d3d65d2eae, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6448966770171643972, guid: d2d951671f0e2a048a1e31d3d65d2eae, type: 3}
-      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -40856,6 +40844,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4869129195932266263, guid: cbef4fdfb6ee77d4287c7885f79f38d3, type: 3}
+      propertyPath: PlayEvent
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869129195932266263, guid: cbef4fdfb6ee77d4287c7885f79f38d3, type: 3}
+      propertyPath: StopEvent
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5072835103027270123, guid: cbef4fdfb6ee77d4287c7885f79f38d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.39
@@ -40917,6 +40913,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbef4fdfb6ee77d4287c7885f79f38d3, type: 3}
+--- !u!1 &2543991743452065759 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3912201969168784146, guid: cbef4fdfb6ee77d4287c7885f79f38d3, type: 3}
+  m_PrefabInstance: {fileID: 2543991743452065758}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2768686225382285174
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ namespace CerenityStudio
         //[field: Header("SFX")]
         //[field: SerializeField] public EventReference jumpSound { get; private set; }
         //[field: SerializeField] public EventReference enemySound { get; private set; }
+
     #endregion
 
     #region UNITY FUNCTION
