@@ -603,7 +603,7 @@ MonoBehaviour:
       Data4: 1215666828
     Path: event:/Monster_Roar
   Event: 
-  PlayEvent: 5
+  PlayEvent: 12
   StopEvent: 6
   AllowFadeout: 1
   TriggerOnce: 0

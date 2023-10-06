@@ -7,8 +7,7 @@ namespace CerenityStudio
 {
     public class PlayerBehaviour : MonoBehaviour
     {
-        [SerializeField] private AudioSource audioSource;
-        [SerializeField] private AudioClip catSound;
+        [SerializeField] private GameObject catSound;
         
         private void Update()
         {
@@ -17,9 +16,19 @@ namespace CerenityStudio
 
         void Meow ()
         {
-            
+
             if (Input.GetKeyDown(KeyCode.E))
+            {
+                catSound.SetActive(true);
                 Debug.Log("Meoww");
+                Invoke("DisableCatSound", 2);
+            }
+                
+        }
+
+        void DisableCatSound()
+        {
+            catSound.SetActive(false);
         }
     }
 }
