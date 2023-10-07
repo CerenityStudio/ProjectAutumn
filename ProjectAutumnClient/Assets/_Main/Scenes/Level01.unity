@@ -42214,6 +42214,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 618080948372830977, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
+      propertyPath: PreloadSamples
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3391589254676477134, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -42257,6 +42261,10 @@ PrefabInstance:
     - target: {fileID: 4654262585086063529, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
       propertyPath: m_Name
       value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250219062756965058, guid: 1d489022de7673949916fd1f6f84a26f, type: 3}
+      propertyPath: Preload
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
