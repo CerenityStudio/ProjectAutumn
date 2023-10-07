@@ -2,15 +2,19 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelTrigger : MonoBehaviour
 {
     [SerializeField] private string targetLevel;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameStateMachine stateMachine;
+    [SerializeField] private GameObject screenIn;
+    [SerializeField] private GameObject screenOut;
     
     private void Awake()
     {
+        screenIn.SetActive(true);
         stateMachine = FindObjectOfType<GameStateMachine>();
     }
 
@@ -23,10 +27,14 @@ public class LevelTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Player") && this.gameObject.name == "Level Trigger")
-            stateMachine.LoadLevel(targetLevel);
-        
+        {
+            screenOut.SetActive(true);
+        }
+
         if (col.CompareTag("Player") && this.gameObject.name == "End Trigger")
+        {
             stateMachine.EndGame();
+        }
     }
 
     void PauseGame()
@@ -39,5 +47,21 @@ public class LevelTrigger : MonoBehaviour
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitGame()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void LoadLevel()
+    {
+        stateMachine.LoadLevel(targetLevel);
     }
 }

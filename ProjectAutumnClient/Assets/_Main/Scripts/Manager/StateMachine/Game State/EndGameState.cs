@@ -10,7 +10,6 @@ public class EndGameState : GameBaseState
     public override void Enter()
     {
         stateMachine.ShowEndScreen();
-        Time.timeScale = 0;
     }
 
     public override void Tick(float deltaTime)

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hiding Spot
+  - Object
   layers:
   - Default
   - TransparentFX
@@ -53,4 +54,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 2246834807
+    locked: 0
+  - name: Leaf
+    uniqueID: 2857990249
     locked: 0

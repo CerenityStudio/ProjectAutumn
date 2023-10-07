@@ -22,7 +22,7 @@ namespace CerenityStudio
     #region UNITY FUNCTION
         private void Awake()
         {
-            DontDestroyOnLoad(gameObject);
+            // DontDestroyOnLoad(gameObject);
             if (instance != null)
             {
 #if UNITY_EDITOR
