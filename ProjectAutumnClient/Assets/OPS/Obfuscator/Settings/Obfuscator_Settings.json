@@ -422,7 +422,7 @@
     {
       "Type" : "Bool",
       "Key" : "Global_Enable_Obfuscation",
-      "Value" : "False",
+      "Value" : "True",
       "Values" : null
     }
   ]
