@@ -53,6 +53,15 @@ namespace CerenityStudio
 
             WallSlide();
             WallJump();
+            //LandDetection();
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("Ground"))
+            {
+                _animator.SetBool("isJump", false);
+            }
         }
     #endregion
 
@@ -76,7 +85,7 @@ namespace CerenityStudio
             if (context.performed && IsGrounded())
             {
                 _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, jumpingPower);
-                _animator.SetTrigger("isJump");
+                _animator.SetBool("isJump", true);
             }
 
             // ketika tombol lompat ditekan di wall
@@ -158,11 +167,19 @@ namespace CerenityStudio
             isWallJumping = false;
         }
 
+        private void LandDetection()
+        {
+            if (IsGrounded())
+            {
+                _animator.SetBool("isJump", false);
+            }
+        }
+
         IEnumerator LandAnimation()
         {
-            _animator.SetBool("isGrounded", true);
+            //_animator.SetBool("isGrounded", true);
             yield return new WaitForSeconds(1f);
-            _animator.SetBool("isGrounded", false);
+            //_animator.SetBool("isGrounded", false);
         }
     #endregion
     }

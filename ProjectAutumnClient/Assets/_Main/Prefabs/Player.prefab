@@ -72,14 +72,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 575444527
-  m_SortingLayer: 2
+  m_SortingLayer: 5
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 50dc36dc9e9ed544db0a2e883e6b2b88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 15, y: 15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -475,6 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe4e8d2c52042d45a65073fd3e7379c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionUI: {fileID: 0}
 --- !u!1 &7893066223317360523
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,7 +486,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3634656197851151986}
   - component: {fileID: 5133531670743271262}
-  - component: {fileID: 4869129195932266263}
   m_Layer: 0
   m_Name: PlayerSound
   m_TagString: Untagged
@@ -526,34 +526,3 @@ MonoBehaviour:
   - Cat_SFX
   CollisionTag: 
   PreloadSamples: 0
---- !u!114 &4869129195932266263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7893066223317360523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 899746110
-      Data2: 1293230594
-      Data3: 1462534024
-      Data4: 1947164149
-    Path: event:/Cat_Attention
-  Event: 
-  PlayEvent: 11
-  StopEvent: 12
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  AllowNonRigidbodyDoppler: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20

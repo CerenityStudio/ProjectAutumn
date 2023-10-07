@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hiding Spot
   - Object
+  - Ground
   layers:
   - Default
   - TransparentFX
