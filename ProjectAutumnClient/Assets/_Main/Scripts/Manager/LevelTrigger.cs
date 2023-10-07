@@ -64,4 +64,9 @@ public class LevelTrigger : MonoBehaviour
     {
         stateMachine.LoadLevel(targetLevel);
     }
+
+    public void EndGame()
+    {
+        stateMachine.EndGame();
+    }
 }

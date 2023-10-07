@@ -43,6 +43,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Monster Body
+    uniqueID: 3555873753
+    locked: 0
+  - name: Scanner
+    uniqueID: 1661879935
+    locked: 0
+  - name: Monster Head
+    uniqueID: 293882625
+    locked: 0
   - name: Environment
     uniqueID: 3927222415
     locked: 0
