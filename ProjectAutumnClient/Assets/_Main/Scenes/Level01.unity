@@ -3221,7 +3221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objSprite: {fileID: 21300000, guid: 6a52f55bec8b48a4d875de93f5e39f53, type: 3}
   objTittle: COIN
-  objDesc: 
+  objDesc: It's a coin
   _popUpPanel: {fileID: 8220535450527355038, guid: f9937edbf28d3134989df109c33f1498, type: 3}
   _memory: {fileID: 8826627750309813322, guid: f9937edbf28d3134989df109c33f1498, type: 3}
 --- !u!1 &711564415
@@ -3369,7 +3369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objSprite: {fileID: 21300000, guid: ea8245ef72305cd42b7059191884b528, type: 3}
   objTittle: RIPPED CLOTHES
-  objDesc: 
+  objDesc: 'A ripped cloth... '
   _popUpPanel: {fileID: 8220535450527355038, guid: f9937edbf28d3134989df109c33f1498, type: 3}
   _memory: {fileID: 8826627750309813322, guid: f9937edbf28d3134989df109c33f1498, type: 3}
 --- !u!1 &724963294
@@ -4634,7 +4634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objSprite: {fileID: 21300000, guid: 9f58157d2a25f57418dc6aa7aee670b6, type: 3}
   objTittle: GUN
-  objDesc: 
+  objDesc: A gun? for what?
   _popUpPanel: {fileID: 8220535450527355038, guid: f9937edbf28d3134989df109c33f1498, type: 3}
   _memory: {fileID: 8826627750309813322, guid: f9937edbf28d3134989df109c33f1498, type: 3}
 --- !u!1 &1202221122
@@ -5322,7 +5322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objSprite: {fileID: 21300000, guid: f7a0477b79b8124428f6cc0487513075, type: 3}
   objTittle: CD
-  objDesc: 
+  objDesc: A CD Player....
   _popUpPanel: {fileID: 8220535450527355038, guid: f9937edbf28d3134989df109c33f1498, type: 3}
   _memory: {fileID: 8826627750309813322, guid: f9937edbf28d3134989df109c33f1498, type: 3}
 --- !u!1 &1401346921
@@ -42126,7 +42126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objSprite: {fileID: 21300000, guid: 62e0a4257cd02414a88f1a5d0f012a82, type: 3}
   objTittle: FRAME
-  objDesc: 
+  objDesc: A frame??
   _popUpPanel: {fileID: 8220535450527355038, guid: f9937edbf28d3134989df109c33f1498, type: 3}
   _memory: {fileID: 8826627750309813322, guid: f9937edbf28d3134989df109c33f1498, type: 3}
 --- !u!1 &1837255549
@@ -42398,7 +42398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objSprite: {fileID: 21300000, guid: 6a52f55bec8b48a4d875de93f5e39f53, type: 3}
   objTittle: COIN
-  objDesc: 
+  objDesc: I found another coin
   _popUpPanel: {fileID: 8220535450527355038, guid: f9937edbf28d3134989df109c33f1498, type: 3}
   _memory: {fileID: 8826627750309813322, guid: f9937edbf28d3134989df109c33f1498, type: 3}
 --- !u!1 &1857701327
