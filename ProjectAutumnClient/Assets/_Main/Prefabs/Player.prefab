@@ -71,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 575444527
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 50dc36dc9e9ed544db0a2e883e6b2b88, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 7467003896961162627}
   - component: {fileID: 5434312365017272699}
   - component: {fileID: 1070177862974865047}
+  - component: {fileID: 5846962242199273996}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -225,7 +226,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 715aedd15c9b3274ebdedae51693b966, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -387,7 +388,19 @@ MonoBehaviour:
     m_ActionId: 5b829da8-f963-4694-bbd7-ab1ace763090
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5846962242199273996}
+        m_TargetAssemblyTypeName: CerenityStudio.Interactor, Assembly-CSharp
+        m_MethodName: Interactive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 906e39c1-1409-435d-bbbc-5a2a436402fe
     m_ActionName: Player/Interactive[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
@@ -408,7 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpingPower: 5
+  jumpingPower: 10
   _animator: {fileID: 587384271593779438}
   groundCheck: {fileID: 5421398300639073828}
   groundLayer:
@@ -450,6 +463,18 @@ MonoBehaviour:
       Data3: 1462534024
       Data4: 1947164149
     Path: event:/Cat_Attention
+--- !u!114 &5846962242199273996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3912201969168784146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efe4e8d2c52042d45a65073fd3e7379c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7893066223317360523
 GameObject:
   m_ObjectHideFlags: 0

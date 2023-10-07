@@ -9,6 +9,7 @@ namespace CerenityStudio{
     {
     #region VARIABLE
         private bool _allowedToPickup;
+        [SerializeField] private GameObject interactionUI;
 
         ObjectInteractive _object;
     #endregion
@@ -27,6 +28,7 @@ namespace CerenityStudio{
         private void OnTriggerEnter2D(Collider2D other)
         {
             if(other.CompareTag("Object")){
+                interactionUI.SetActive(true);
                 _allowedToPickup = true;
                 _object = other.GetComponent<ObjectInteractive>();
             }
@@ -35,6 +37,7 @@ namespace CerenityStudio{
         private void OnTriggerExit2D(Collider2D other)
         {
             if(other.CompareTag("Object")){
+                interactionUI.SetActive(false);
                 _allowedToPickup = false;
             }
         }
